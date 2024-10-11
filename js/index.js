@@ -1,22 +1,22 @@
 const lettre = 'ABCDEFGHJKLMNPQRSTUVWXYZ';
 const nombre = '0123456789';
 let plaque = "";
+const plaques = []
 
 
 
-function generateplaques(result) {
-   // let result = 50;
+function generateplaque(result) {
     while(result > 0){
         plaque="";
 generateletter();
 generatenumber();
 generateletter();
+plaques.push(plaque)
 console.log(plaque);
 result--;
 }
 }
 function generateletter(){  
-    //let plaque="";
     for (let i=0 ; i<2;i++) {
 plaque += lettre.charAt(Math.floor( Math.random() * lettre.length));
 }}
@@ -27,12 +27,12 @@ for (let i=0 ; i<3;i++) {
     }
 plaque += "-";
 }
+
+
 let result= window.prompt();
-generateplaques(result) ;
+generateplaque(result);
+alert (`voici `+plaques)
    
 
 
 
-/* console.log(result); */
-/* generateplaques(); */
-//console.log(generateplaques());
