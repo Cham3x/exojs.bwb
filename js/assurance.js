@@ -58,28 +58,6 @@ let anneesPermis = 1;
 let age = 25;
 
 console.log (determinerTarif(age, anneesPermis, accidents, anneesCompagnie));
-//
-/*  let prixCopie = ('i');
-function prixTotal (nombreCopie, prixCopie) {
-    let prix =  nombreCopie * prixCopie;
-    
-    if (nombreCopie <=10 ){
-      ( i = '0.10');
-    }
-    if ((nombreCopie > 10 ) || (nombreCopie <=30 )){
-        prixCopie = '0.09';
-    }
-    if (nombreCopie>30){
-        prixCopie =  '0.08';
-    }
-    console.log(prix);
-return prix;
-}
- let nombreCopie = 25;
-
-
- console.log ( prixTotal(nombreCopie,prixCopie)); */
-
 
  // 
 let n = 35; // nombre de copie
@@ -95,7 +73,7 @@ let P1 = 10 ; let P2= 20; // palier de reduction
         PT = ( pc1 * P1) + ( (n - P1) * pc2 );
     }
     else if  (n > 30) { 
-        PT= ( P1 * pc1)+ (P2 * pc2 ) + ((n-(P1 + P2)) * pc3);  
+        PT= ( P1 * pc1) + (P2 * pc2 ) + ((n-(P1 + P2)) * pc3);  
     }
     return PT.toFixed(2);
  }
@@ -103,3 +81,30 @@ prixTotal();
  console.log (prixTotal());
 
  //
+ let imposable = "";
+ let sexe = "femme"; 
+ let Age = 36 ;
+function Imposable(imposable){
+    if (( sexe === "homme" && Age >= 18) || ( sexe === "femme" && Age >= 18 && Age <= 35 )){
+        imposable = "oui";
+    }
+    else {
+        imposable = "non";
+    }
+    return imposable;
+}
+Imposable(imposable);
+console.log(Imposable(imposable));
+
+// 
+let symbole = "*";
+let s = 10 ;
+
+for (let i = s; i > 0; i--) {
+    let ligne = "";
+    for (let j = 0; j < i; j++) {
+        ligne += symbole;
+    }
+    console.log(ligne);
+}
+//
