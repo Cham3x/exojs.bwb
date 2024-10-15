@@ -108,3 +108,12 @@ for (let i = s; i > 0; i--) {
     console.log(ligne);
 }
 //
+let l =6;
+for (let i = 0 ; i <= l; i++) {
+    let lignes = "";
+    for (let j = 0; j < i; j++) {
+        lignes += symbole;
+    }
+    console.log(lignes);
+}
+//
