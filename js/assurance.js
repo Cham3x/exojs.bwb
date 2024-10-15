@@ -81,21 +81,21 @@ return prix;
  console.log ( prixTotal(nombreCopie,prixCopie)); */
 
 
- // n=nombre copie; PT= p1+p2+p3; p1=n+pc; p2=n+pc; p3=n+pc;
-let n = 25;
-const pc1 = 0.10
-const pc2 = 0.09
-const pc3 = 0.08
+ // 
+let n = 35; // nombre de copie
+let pc1 = 0.10 ; let pc2 = 0.09 ; let pc3 = 0.08; // prix des palier de reduction
+let P1 = 10 ; let P2= 20; // palier de reduction
+
  function prixTotal(){
    let PT = "";
     if (n<=10){
             PT= n * pc1 ;  
     }
     else if (n>10 && n <=30 ) {
-        PT = ( pc1 * 10) + ( (n - 10) * pc2 );
+        PT = ( pc1 * P1) + ( (n - P1) * pc2 );
     }
     else if  (n > 30) { 
-        PT= ( 10 * pc1)+ (20 * pc2 ) + ((n-30) * pc);  
+        PT= ( P1 * pc1)+ (P2 * pc2 ) + ((n-(P1 + P2)) * pc3);  
     }
     return PT.toFixed(2);
  }
