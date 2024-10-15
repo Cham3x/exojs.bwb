@@ -109,9 +109,9 @@ for (let i = s; i > 0; i--) {
 }
 //
 let l =6;
-for (let i = 0 ; i <= l; i++) {
+for (let i = 0 ; i < l; i++) {
     let lignes = "";
-    for (let j = 0; j < i; j++) {
+    for (let j = 0; j <= i; j++) {
         lignes += symbole;
     }
     console.log(lignes);
