@@ -212,3 +212,25 @@ function bulle(){
 bulle()
 console.log(liste) */
 //Palindrome
+    
+let mot = window.prompt("entrer un mot");
+   // Convertir en minuscules et supprimer les accents et les espaces
+   // tolowercase pour convertir le texte en minuscule .normalise('nfd') pour séparer la lettre de sont caractere spécial
+   //.replace(/[\u0300-\u036f]/g, "") pour supprimer l'interpretation des caractere spéciaux [\u0300-\u036f] represente les caractere spéciaux
+   // /g pour chercher tous les craractere demander dans le texte et enfin "" pour les remplacer par rien donc revient a les supprimer de l'interpretation
+   // /s représente les espace
+mot = mot.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").replace(/\s/g, "");
+let mot2 = mot.split('').reverse().join('');
+function palindrome(){
+    let reponse = "";
+    if (mot === mot2){
+        reponse = "vrai";
+    }
+        else {
+            reponse = "faux";
+        }
+    
+    return reponse;
+}
+palindrome();
+console.log(palindrome())
