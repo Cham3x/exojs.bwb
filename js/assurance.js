@@ -97,8 +97,8 @@ Imposable(imposable);
 console.log(Imposable(imposable)); */
 
 // 
-/* let symbole = "*";
-let s = 10 ;
+/* let symbole = "a ";
+let s = 2 ;
 
 for (let i = s; i > 0; i--) {
     let ligne = "";
@@ -106,9 +106,9 @@ for (let i = s; i > 0; i--) {
         ligne += symbole;
     }
     console.log(ligne);
-} */
+}
 //
-/* let l =6;
+let l =6;
 for (let i = 0 ; i < l; i++) {
     let lignes = "";
     for (let j = 0; j <= i; j++) {
@@ -179,7 +179,7 @@ function recherche(){
     console.log(indices);
 }
 recherche() */
-// tri a bulle
+// tri a bulle en partant du debut de la liste et classant du plus petit au plus grand
 /* let liste = [5,13,2,75,6,72,1,99,0,370,0.1,0.5,2.6,7]
 console.log(liste)
 function bulle(){
@@ -195,3 +195,20 @@ function bulle(){
 }
 bulle()
 console.log(liste) */
+// tri a bulle en partant de la fin du plus grand au plus petit
+/* let liste = [5,13,2,75,6,72,1,99,0,370,0.1,0.5,2.6,7]
+console.log(liste)
+function bulle(){
+    for (let i = liste.length ; i > 0; i--){ 
+        for ( let j = liste.length -1 ; j > 0 ; j--){ 
+            if ( liste[j] > liste[j - 1]){
+                let temp = liste[j];
+                liste[j] = liste[j - 1];
+                liste[j - 1] = temp;
+            }
+        }
+    }
+}
+bulle()
+console.log(liste) */
+//Palindrome
