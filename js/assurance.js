@@ -1,4 +1,4 @@
-function determinerTarif (age, anneesPermis, accidents, anneesCompagnie){
+/* function determinerTarif (age, anneesPermis, accidents, anneesCompagnie){
 
     let tarif ="";
     console.log(tarif);
@@ -94,10 +94,10 @@ function Imposable(imposable){
     return imposable;
 }
 Imposable(imposable);
-console.log(Imposable(imposable));
+console.log(Imposable(imposable)); */
 
 // 
-let symbole = "*";
+/* let symbole = "*";
 let s = 10 ;
 
 for (let i = s; i > 0; i--) {
@@ -106,14 +106,92 @@ for (let i = s; i > 0; i--) {
         ligne += symbole;
     }
     console.log(ligne);
-}
+} */
 //
-let l =6;
+/* let l =6;
 for (let i = 0 ; i < l; i++) {
     let lignes = "";
     for (let j = 0; j <= i; j++) {
         lignes += symbole;
     }
     console.log(lignes);
-}
+} */
 //
+/* let symbole = "*";
+let s = 10;
+
+for (let i = s; i > 0; i--) { // Boucle extérieure pour les lignes
+    let ligne = "";
+    for (let j = s; j >= i; j--) { // Boucle intérieure avec décrémentation
+        ligne += symbole; // Concaténation des étoiles
+    }
+    console.log(ligne); // Affichage de chaque ligne
+} */
+// test pour comprendre la generation et la completion aleaoire d'un tableau
+/* // Créer un tableau de 36 éléments
+let array = new Array(36);
+
+// Créer une liste des lettres de l'alphabet
+let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+
+// Fonction pour mélanger le tableau
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+
+// Mélanger la liste des lettres de l'alphabet
+let shuffledAlphabet = shuffle(alphabet);
+
+// Remplir le tableau avec les lettres aléatoires
+for (let i = 0; i < array.length; i++) {
+    array[i] = shuffledAlphabet[i % shuffledAlphabet.length];
+}
+ 
+console.log(array);*/
+// rechercher x dans t dance cas me suis servie du test du dessus 
+/* let x = 'a';
+function recherche(){
+    let t = array;
+    let indices = [];
+    let index = t.indexOf(x);
+    while (index != -1) {
+      indices.push(index);
+      index = t.indexOf(x, index + 1);
+    }
+    console.log(indices);
+}
+recherche()
+ */
+/* // dans ce cas on reche x dans t qui a était generer manuellement
+ let x = '72';
+ let t = ["g", "b", "g", "c", "s", "5", "x","72", "x","cd","36","72"]
+function recherche(){
+    let indices = [];
+    let index = t.indexOf(x);
+    while (index != -1) {
+      indices.push(index);
+      index = t.indexOf(x, index + 1);
+    }
+    console.log(indices);
+}
+recherche() */
+// tri a bulle
+/* let liste = [5,13,2,75,6,72,1,99,0,370,0.1,0.5,2.6,7]
+console.log(liste)
+function bulle(){
+    for (let i = 0; i < liste.length; i++){
+        for ( let j = 0; j < liste.length - 1; j++){
+            if ( liste[j] > liste[j + 1]){
+                let temp = liste[j];
+                liste[j] = liste[j + 1];
+                liste[j + 1] = temp;
+            }
+        }
+    }
+}
+bulle()
+console.log(liste) */
